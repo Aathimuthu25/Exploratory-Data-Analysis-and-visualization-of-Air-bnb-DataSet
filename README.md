@@ -31,7 +31,8 @@ The Exploratory Data Analysis (EDA) and Visualization on Airbnb Dataset is a com
 a.info()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/e62e255d-db72-40ea-8f16-1a6f6bc9b2d6)
+# <p align="center">![Img_1](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/a5fb6db9-8d85-4060-b766-bbcd5197525e)
+
 </p>
 
 ```py
@@ -39,7 +40,8 @@ Result :
 a.describe()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/cbb617bc-cc5d-43e8-8872-0ab5f9c90d8f)
+# <p align="center">![Img_2](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/7719339f-1dc3-4cb1-873d-741d37a3e137)
+
 </p>
 
 ```py
@@ -48,7 +50,8 @@ b = a.duplicated().sum()
 print("The total number of Duplicate values : ",b)
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/c2d39e33-d7e8-45c4-9273-b6f934ed8b36)
+# <p align="center">![Img_3](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/8d6a55d7-4089-4213-944f-71220b8d766c)
+
 </p>
 
 ```py
@@ -58,7 +61,8 @@ c = a.drop_duplicates(inplace = True)
 a.duplicated().sum()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/024eb900-3367-4f7a-9e87-b97e669a6f6e)
+# <p align="center">![img_4](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/17a70299-cfa4-4a83-8cdb-27f4161a4cd2)
+
 </p>
 
 ```py
@@ -69,7 +73,8 @@ f = a.drop(['house_rules'],axis=1,inplace=True)
 a.info()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/30b150b2-5b72-49a5-a4a1-baa36e7523d0)
+# <p align="center">![Img_5](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/e18ea096-b8c4-4d75-8428-12ae51ae8cad)
+
 </p>
 
 ```py
@@ -78,7 +83,8 @@ d = a.isnull().sum()
 print("The total number of Null values : \n",d)
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/83f428e1-47c7-441a-a14e-2597136880dd)
+# <p align="center">![Img_6](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/b68425ff-7a66-4772-9bdd-04be600c8021)
+
 </p>
 
 ```py
@@ -125,7 +131,8 @@ a['availability 365'].fillna(a['availability 365'].mode().iloc[0],inplace=True)
 a.isnull().sum()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/aafa41db-4322-4a7f-b5bf-937f21edf0b1)
+# <p align="center">![Img_7](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/0f89042d-ce7f-423f-8cc8-b2a3266f5b84)
+
 </p>
 
 
@@ -135,7 +142,8 @@ g = a.groupby(['room type']).size()
 g
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/e62e255d-db72-40ea-8f16-1a6f6bc9b2d6)
+# <p align="center">![Img_8](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/d7977305-3755-4a30-8610-4c91b5d54711)
+
 </p>
 
 
@@ -146,7 +154,8 @@ i = h.groupby('room type').size()
 i.sort_values().tail(1)c
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/e62e255d-db72-40ea-8f16-1a6f6bc9b2d6)
+# <p align="center">![Img_9](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/ae9e330f-6ba7-4f27-9cf4-283e4e8ee54b)
+
 </p>
 
 
@@ -156,7 +165,8 @@ j = a.groupby('neighbourhood group')['price in dollars'].mean()
 j
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/e62e255d-db72-40ea-8f16-1a6f6bc9b2d6)
+# <p align="center">![Img_10](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/2b556fca-0657-4167-a1ad-731c338b27ad)
+
 </p>
 
 
@@ -167,7 +177,8 @@ k
 k.sort_values().tail(1)
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/e62e255d-db72-40ea-8f16-1a6f6bc9b2d6)
+# <p align="center">![Img_11](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/6c721554-1f0d-45f5-8da6-b860d4a70480)
+
 </p>
 
 ## DATA VISUALIZATION
@@ -180,7 +191,8 @@ plt.pie(l,labels = m,autopct='%1.1f%%')
 plt.show()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/9434c530-4277-40fa-b4d1-0eb0d65029a5)
+# <p align="center">![Img_12](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/934a6293-d8ea-4d22-8b94-722510ddb0c2)
+
 
 </p>
 
@@ -194,7 +206,8 @@ plt.pie(o,labels = p,autopct='%1.1f%%')
 plt.show()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/c450b734-37ff-4e62-b890-482644194fd5)
+# <p align="center">![Img_13](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/a8994999-edb8-446d-b174-56cb285a35bd)
+
 </p>
 
 
@@ -209,7 +222,8 @@ most_expensive_price = q.max()
 print("The Most Expensive Neighborhood group for rentals : ", most_expensive_neighborhood , most_expensive_price)
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/173c19f6-b7b7-4761-b4c4-8978a52a89de)
+# <p align="center">![Img_14](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/c7ab1933-d49a-431d-863f-5af98ae25ccd)
+
 </p>
 
 
@@ -221,7 +235,8 @@ plt.show()
 print("The cheapest neighborhood is :", s.sort_values().head(1))
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/8a36f128-b992-4bfa-83c2-c1bd64d5fe51)
+# <p align="center">![Img_15](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/a948f3bb-66e6-4958-b510-b5c7ec14eeb0)
+
 </p>
 
 
@@ -237,7 +252,8 @@ plt.ylabel('minimum nights')
 plt.show()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/cb8017ad-af7c-4be7-a4c2-385f5e72de55)
+# <p align="center">![Img_16](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/17eb48bd-1a7d-4c5d-a51c-9e3e40b3f15a)
+
 </p>
 
 
@@ -252,7 +268,8 @@ plt.ylabel('prices')
 plt.show()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/965e3375-e914-4872-b23b-9751e2051d56)
+# <p align="center">![Img_17](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/7d2b5a75-f7e4-4edd-a3f0-3bbb7f1c6cde)
+
 </p>
 
 
@@ -264,7 +281,8 @@ plt.pie(x,labels = y,autopct='%1.1f%%')
 plt.show()
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/28b0751d-da65-4518-9e79-4b91507e8986)
+# <p align="center">![Img_18](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/9db08aea-a2f8-4cb7-bcc4-ac6e1880ca03)
+
 </p>
 
 
@@ -273,5 +291,6 @@ Result :
 a.groupby('neighbourhood')['availability 365'].mean().sort_values().head(1)
 ```
 Result : 
-# <p align="center">![image](https://github.com/manojgaikwad13/Exploratory-Data-Analysis-Visualisation-on-Airbnb-Dataset/assets/96239993/970829aa-d19e-48dc-be49-a3dc5d0f4f71)
+# <p align="center">![Img_19](https://github.com/Aathimuthu25/Exploratory-Data-Analysis-and-visualization-of-Air-bnb-DataSet/assets/158067286/dd95489f-6994-4ef5-9e26-e88b68f17c2a)
+
 </p>
